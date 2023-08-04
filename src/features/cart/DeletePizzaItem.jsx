@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import Button from '../../ui/Button';
 import { deleteItem } from './cartSlice';
 
-function DeleteItem({ pizzaId }) {
+function DeletePizzaItem({ pizzaId }) {
   const dispatch = useDispatch();
   function handleDeleteItem() {
     dispatch(deleteItem(pizzaId));
@@ -14,4 +14,4 @@ function DeleteItem({ pizzaId }) {
   );
 }
 
-export default DeleteItem;
+export default DeletePizzaItem;
